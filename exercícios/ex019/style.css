@@ -1,0 +1,36 @@
+@charset "UTF-8"
+
+/*
+ html = ID, CSS = #
+ html = CLASS, CSS = .
+ */
+
+body{
+    background-color: rgb(10, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: aqua;
+}
+
+h1#principal{
+    text-align: center;
+}
+
+h2{
+    color: blueviolet;
+}
+
+.first{
+    font-weight: bolder;
+
+}
+
+h1#second{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.third{
+    background-color: rgb(47, 11, 82);
+}
