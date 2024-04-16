@@ -12,6 +12,26 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(50, 39, 39);
+        }
+
+        tbody > tr:nth-child(odd){ /* pode ser 2n-1 */
+            background-color: crimson;
+            font-weight: bold;
         }
 
         td, th{
@@ -20,7 +40,7 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(50, 39, 39);
             color: white;
         }
     </style>
@@ -29,6 +49,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES
     TABLE 
+        CAPTION
         THEAD
         tr, td, th
         TBODY
@@ -37,10 +58,11 @@
         tr, td, th
     -->
     <table>
+        <caption>População das Unidas Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
         <tbody>
@@ -56,11 +78,23 @@
                 <td>Rio de Janeiro</td>
                 <td>17 264 943 </td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 141 626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11 444 380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10 882 965</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
-                <td>0000000</td>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>120.821.754</strong></td>
             </tr>
         </tfoot>
     </table>
