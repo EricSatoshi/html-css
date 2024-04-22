@@ -10,7 +10,7 @@
         }
 
         table{
-            width: 500px;
+            width:350px;
             height: 400px;
             border-collapse: collapse;
         }
@@ -33,6 +33,11 @@
             background-color: gray;
             color: white;
         }
+
+        .primeirozero, .segundozero{
+            background-color: gray;
+            color: white;
+        }
       
     </style>
 </head>
@@ -40,12 +45,14 @@
     <table>
         <thead>
             <tr>
-            <th>Área</th>
-            <th>Disciplinas</th>
-            <th>Notas</th>
-            <tr>Nota 1</tr>
-            <tr>Nota 2</tr>
-            <th>Média</th>
+            <th rowspan="2">Área</th>
+            <th rowspan="2">Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
             </tr>
         </thead>
         <tbody>
@@ -75,8 +82,8 @@
             <td>0</td>
             </tr>
             <tr>
-            <td class="materia" id="media2" colspan="3">Média de Exatas</td>
-            <td>0</td>
+            <td class="materia" id="media2" colspan="4">Média de Exatas</td>
+            <td class="primeirozero">0</td>
             </tr>
             <tr>
             <th rowspan="2"><strong>Humanas</strong></th>
@@ -92,8 +99,8 @@
             <td>0</td>
             </tr>
             <tr>
-            <td class="materia" id="media1" colspan="3">Média de Humanas</td>
-            <td>0</td>
+            <td class="materia" id="media1" colspan="4">Média de Humanas</td>
+            <td class="segundozero">0</td>
             </tr>
         </tbody>
     </table>
