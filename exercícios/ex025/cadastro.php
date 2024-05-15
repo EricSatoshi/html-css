@@ -1,0 +1,1 @@
+Mais no futuro vamos aprender PHP, não se preocupe!
