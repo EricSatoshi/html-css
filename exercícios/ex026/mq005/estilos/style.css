@@ -14,13 +14,27 @@ header{
     background-color: gray;
 }
 
+span#burguer{
+    background-color: rgb(32, 31, 31);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+span#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: crosshair;
+}
+
 header > h1{
     padding: 10px;
     text-align: center;
 }
 
 menu{
-    display: block;
+    display: none;
 }
 
 menu > ul{
